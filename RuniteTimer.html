@@ -1,0 +1,3171 @@
+<!DOCTYPE>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>F2P RuneScape Runite Ore Respawn Timer -tool</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+  
+    //Declaring all the global variables
+    var w3_1 = 1, w3_2 = 1, w3_3 = 1, w7_1 = 1, w7_2 = 1, w7_3 = 1, w8_1 = 1, w8_2 = 1, w8_3 = 1, w11_1 = 1, w11_2 = 1, w11_3 = 1, w17_1 = 1, w17_2 = 1, w17_3 = 1, w19_1 = 1, w19_2 = 1, w19_3 = 1, w20_1 = 1, w20_2 = 1, w20_3 = 1, w29_1 = 1, w29_2 = 1, w29_3 = 1, w33_1 = 1, w33_2 = 1, w33_3 = 1, w34_1 = 1, w34_2 = 1, w34_3 = 1, w38_1 = 1, w38_2 = 1, w38_3 = 1, w41_1 = 1, w41_2 = 1, w41_3 = 1, w43_1 = 1, w43_2 = 1, w43_3 = 1, w57_1 = 1, w57_2 = 1, w57_3 = 1, w61_1 = 1, w61_2 = 1, w61_3 = 1, w80_1 = 1, w80_2 = 1, w80_3 = 1, w81_1 = 1, w81_2 = 1, w81_3 = 1, w108_1 = 1, w108_2 = 1, w108_3 = 1, w120_1 = 1, w120_2 = 1, w120_3 = 1, w135_1 = 1, w135_2 = 1, w135_3 = 1, w136_1 = 1, w136_2 = 1, w136_3 = 1, w141_1 = 1, w141_2 = 1, w141_3 = 1;
+    var w3xRock1 = true, w3xRock2 = true, w3xRock3 = true, w7xRock1 = true, w7xRock2 = true, w7xRock3 = true, w8xRock1 = true, w8xRock2 = true, w8xRock3 = true, w11xRock1 = true, w11xRock2 = true, w11xRock3 = true, w17xRock1 = true, w17xRock2 = true, w17xRock3 = true, w19xRock1 = true, w19xRock2 = true, w19xRock3 = true, w20xRock1 = true, w20xRock2 = true, w20xRock3 = true, w29xRock1 = true, w29xRock2 = true, w29xRock3 = true, w33xRock1 = true, w33xRock2 = true, w33xRock3 = true, w34xRock1 = true, w34xRock2 = true, w34xRock3 = true, w38xRock1 = true, w38xRock2 = true, w38xRock3 = true, w41xRock1 = true, w41xRock2 = true, w41xRock3 = true, w43xRock1 = true, w43xRock2 = true, w43xRock3 = true, w57xRock1 = true, w57xRock2 = true, w57xRock3 = true, w61xRock1 = true, w61xRock2 = true, w61xRock3 = true, w80xRock1 = true, w80xRock2 = true, w80xRock3 = true, w81xRock1 = true, w81xRock2 = true, w81xRock3 = true, w108xRock1 = true, w108xRock2 = true, w108xRock3 = true, w120xRock1 = true, w120xRock2 = true, w120xRock3 = true, w135xRock1 = true, w135xRock2 = true, w135xRock3 = true, w136xRock1 = true, w136xRock2 = true, w136xRock3 = true, w141xRock1 = true, w141xRock2 = true, w141xRock3 = true; 
+    var w3Rock1Timer = false, w3Rock2Timer = false, w3Rock3Timer = false, w7Rock1Timer = false, w7Rock2Timer = false, w7Rock3Timer = false, w8Rock1Timer = false, w8Rock2Timer = false, w8Rock3Timer = false, w11Rock1Timer = false, w11Rock2Timer = false, w11Rock3Timer = false, w17Rock1Timer = false, w17Rock2Timer = false, w17Rock3Timer = false, w19Rock1Timer = false, w19Rock2Timer = false, w19Rock3Timer = false, w20Rock1Timer = false, w20Rock2Timer = false, w20Rock3Timer = false, w29Rock1Timer = false, w29Rock2Timer = false, w29Rock3Timer = false, w33Rock1Timer = false, w33Rock2Timer = false, w33Rock3Timer = false, w34Rock1Timer = false, w34Rock2Timer = false, w34Rock3Timer = false, w38Rock1Timer = false, w38Rock2Timer = false, w38Rock3Timer = false, w41Rock1Timer = false, w41Rock2Timer = false, w41Rock3Timer = false, w43Rock1Timer = false, w43Rock2Timer = false, w43Rock3Timer = false, w57Rock1Timer = false, w57Rock2Timer = false, w57Rock3Timer = false, w61Rock1Timer = false, w61Rock2Timer = false, w61Rock3Timer = false, w80Rock1Timer = false, w80Rock2Timer = false, w80Rock3Timer = false, w81Rock1Timer = false, w81Rock2Timer = false, w81Rock3Timer = false, w108Rock1Timer = false, w108Rock2Timer = false, w108Rock3Timer = false, w120Rock1Timer = false, w120Rock2Timer = false, w120Rock3Timer = false, w135Rock1Timer = false, w135Rock2Timer = false, w135Rock3Timer = false, w136Rock1Timer = false, w136Rock2Timer = false, w136Rock3Timer = false, w141Rock1Timer = false, w141Rock2Timer = false, w141Rock3Timer = false;
+    var minutes = 18;
+    var seconds = 4;
+     
+        
+    //WORLD3 
+    function resetWorld3Rock1Timer(value) {
+      w3Rock1Timer = false;
+      if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+      w3_1++;
+      var y = w3_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w3_1 != y) { clearInterval(myVar); return;}
+        if(w3xRock1 == false) {
+          clearInterval(myVar); 
+          w3xRock1 = true;
+          document.getElementById("w3Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w3Image").style.visibility = "visible";
+            document.getElementById("w3Div").style.border = "2px solid #000";
+            w3Rock1Timer = true;
+             
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w3Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld3Rock2Timer(value) {
+      w3Rock2Timer = false;
+      if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+      w3_2++;
+      var y = w3_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w3_2 != y) { clearInterval(myVar); return;}
+        if(w3xRock2 == false) {
+          clearInterval(myVar); 
+          w3xRock2 = true;
+          document.getElementById("w3Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w3Image").style.visibility = "visible";
+            document.getElementById("w3Div").style.border = "2px solid #000";
+            w3Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w3Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld3Rock3Timer(value) {
+      w3Rock3Timer = false;
+      if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+      w3_3++;
+      var y = w3_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w3_3 != y) { clearInterval(myVar); return;}
+        if(w3xRock3 == false) {
+          clearInterval(myVar); 
+          w3xRock3 = true;
+          document.getElementById("w3Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w3Image").style.visibility = "visible";
+            document.getElementById("w3Div").style.border = "2px solid #000";
+            w3Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w3Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+
+
+    
+    //WORLD7    
+    function resetWorld7Rock1Timer(value) {
+      w7Rock1Timer = false;
+      if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+      w7_1++;
+      var y = w7_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w7_1 != y) { clearInterval(myVar); return;}
+        if(w7xRock1 == false) {
+          clearInterval(myVar); 
+          w7xRock1 = true;
+          document.getElementById("w7Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w7Image").style.visibility = "visible";
+            document.getElementById("w7Div").style.border = "2px solid #000";
+            w7Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w7Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld7Rock2Timer(value) {
+      w7Rock2Timer = false;
+      if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+      w7_2++;
+      var y = w7_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w7_2 != y) { clearInterval(myVar); return;}
+        if(w7xRock2 == false) {
+          clearInterval(myVar); 
+          w7xRock2 = true;
+          document.getElementById("w7Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w7Image").style.visibility = "visible";
+            document.getElementById("w7Div").style.border = "2px solid #000";
+            w7Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w7Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld7Rock3Timer(value) {
+      w7Rock3Timer = false;
+      if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+      w7_3++;
+      var y = w7_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w7_3 != y) { clearInterval(myVar); return;}
+        if(w7xRock3 == false) {
+          clearInterval(myVar); 
+          w7xRock3 = true;
+          document.getElementById("w7Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w7Image").style.visibility = "visible";
+            document.getElementById("w7Div").style.border = "2px solid #000";
+            w7Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w7Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+        
+           
+    //WORLD8    
+    function resetWorld8Rock1Timer(value) {
+      w8Rock1Timer = false;
+      if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+      w8_1++;
+      var y = w8_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w8_1 != y) { clearInterval(myVar); return;}
+        if(w8xRock1 == false) {
+          clearInterval(myVar); 
+          w8xRock1 = true;
+          document.getElementById("w8Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w8Image").style.visibility = "visible";
+            document.getElementById("w8Div").style.border = "2px solid #000";
+            w8Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w8Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld8Rock2Timer(value) {
+      w8Rock2Timer = false;
+      if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+      w8_2++;
+      var y = w8_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w8_2 != y) { clearInterval(myVar); return;}
+        if(w8xRock2 == false) {
+          clearInterval(myVar); 
+          w8xRock2 = true;
+          document.getElementById("w8Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w8Image").style.visibility = "visible";
+            document.getElementById("w8Div").style.border = "2px solid #000";
+            w8Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w8Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld8Rock3Timer(value) {
+      w8Rock3Timer = false;
+      if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+      w8_3++;
+      var y = w8_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w8_3 != y) { clearInterval(myVar); return;}
+        if(w8xRock3 == false) {
+          clearInterval(myVar); 
+          w8xRock3 = true;
+          document.getElementById("w8Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w8Image").style.visibility = "visible";
+            document.getElementById("w8Div").style.border = "2px solid #000";
+            w8Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w8Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+      
+    //WORLD11    
+    function resetWorld11Rock1Timer(value) {
+      w11Rock1Timer = false;
+      if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+      w11_1++;
+      var y = w11_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w11_1 != y) { clearInterval(myVar); return;}
+        if(w11xRock1 == false) {
+          clearInterval(myVar); 
+          w11xRock1 = true;
+          document.getElementById("w11Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w11Image").style.visibility = "visible";
+            document.getElementById("w11Div").style.border = "2px solid #000";
+            w11Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w11Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld11Rock2Timer(value) {
+      w11Rock2Timer = false;
+      if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+      w11_2++;
+      var y = w11_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w11_2 != y) { clearInterval(myVar); return;}
+        if(w11xRock2 == false) {
+          clearInterval(myVar); 
+          w11xRock2 = true;
+          document.getElementById("w11Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w11Image").style.visibility = "visible";
+            document.getElementById("w11Div").style.border = "2px solid #000";
+            w11Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w11Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld11Rock3Timer(value) {
+      w11Rock3Timer = false;
+      if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+      w11_3++;
+      var y = w11_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w11_3 != y) { clearInterval(myVar); return;}
+        if(w11xRock3 == false) {
+          clearInterval(myVar); 
+          w11xRock3 = true;
+          document.getElementById("w11Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w11Image").style.visibility = "visible";
+            document.getElementById("w11Div").style.border = "2px solid #000";
+            w11Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w11Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD17   
+    function resetWorld17Rock1Timer(value) {
+      w17Rock1Timer = false;
+      if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+      w17_1++;
+      var y = w17_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w17_1 != y) { clearInterval(myVar); return;}
+        if(w17xRock1 == false) {
+          clearInterval(myVar); 
+          w17xRock1 = true;
+          document.getElementById("w17Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w17Image").style.visibility = "visible";
+            document.getElementById("w17Div").style.border = "2px solid #000";
+            w17Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w17Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld17Rock2Timer(value) {
+      w17Rock2Timer = false;
+      if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+      w17_2++;
+      var y = w17_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w17_2 != y) { clearInterval(myVar); return;}
+        if(w17xRock2 == false) {
+          clearInterval(myVar); 
+          w17xRock2 = true;
+          document.getElementById("w17Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w17Image").style.visibility = "visible";
+            document.getElementById("w17Div").style.border = "2px solid #000";
+            w17Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w17Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld17Rock3Timer(value) {
+      w17Rock3Timer = false;
+      if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+      w17_3++;
+      var y = w17_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w17_3 != y) { clearInterval(myVar); return;}
+        if(w17xRock3 == false) {
+          clearInterval(myVar); 
+          w17xRock3 = true;
+          document.getElementById("w17Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w17Image").style.visibility = "visible";
+            document.getElementById("w17Div").style.border = "2px solid #000";
+            w17Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w17Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD19   
+    function resetWorld19Rock1Timer(value) {
+      w19Rock1Timer = false;
+      if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+      w19_1++;
+      var y = w19_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w19_1 != y) { clearInterval(myVar); return;}
+        if(w19xRock1 == false) {
+          clearInterval(myVar); 
+          w19xRock1 = true;
+          document.getElementById("w19Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w19Image").style.visibility = "visible";
+            document.getElementById("w19Div").style.border = "2px solid #000";
+            w19Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w19Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld19Rock2Timer(value) {
+      w19Rock2Timer = false;
+      if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+      w19_2++;
+      var y = w19_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w19_2 != y) { clearInterval(myVar); return;}
+        if(w19xRock2 == false) {
+          clearInterval(myVar); 
+          w19xRock2 = true;
+          document.getElementById("w19Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w19Image").style.visibility = "visible";
+            document.getElementById("w19Div").style.border = "2px solid #000";
+            w19Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w19Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld19Rock3Timer(value) {
+      w19Rock3Timer = false;
+      if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+      w19_3++;
+      var y = w19_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      //76561197988751373
+      var handler = function() {
+        if(w19_3 != y) { clearInterval(myVar); return;}
+        if(w19xRock3 == false) {
+          clearInterval(myVar); 
+          w19xRock3 = true;
+          document.getElementById("w19Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w19Image").style.visibility = "visible";
+            document.getElementById("w19Div").style.border = "2px solid #000";
+            w19Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w19Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+     
+    //WORLD20   
+    function resetWorld20Rock1Timer(value) {
+      w20Rock1Timer = false;
+      if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+      w20_1++;
+      var y = w20_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w20_1 != y) { clearInterval(myVar); return;}
+        if(w20xRock1 == false) {
+          clearInterval(myVar); 
+          w20xRock1 = true;
+          document.getElementById("w20Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w20Image").style.visibility = "visible";
+            document.getElementById("w20Div").style.border = "2px solid #000";
+            w20Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w20Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld20Rock2Timer(value) {
+      w20Rock2Timer = false;
+      if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+      w20_2++;
+      var y = w20_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w20_2 != y) { clearInterval(myVar); return;}
+        if(w20xRock2 == false) {
+          clearInterval(myVar); 
+          w20xRock2 = true;
+          document.getElementById("w20Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w20Image").style.visibility = "visible";
+            document.getElementById("w20Div").style.border = "2px solid #000";
+            w20Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w20Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld20Rock3Timer(value) {
+      w20Rock3Timer = false;
+      if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+      w20_3++;
+      var y = w20_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w20_3 != y) { clearInterval(myVar); return;}
+        if(w20xRock3 == false) {
+          clearInterval(myVar); 
+          w20xRock3 = true;
+          document.getElementById("w20Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w20Image").style.visibility = "visible";
+            document.getElementById("w20Div").style.border = "2px solid #000";
+            w20Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w20Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD29
+    function resetWorld29Rock1Timer(value) {
+      w29Rock1Timer = false;
+      if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+      w29_1++;
+      var y = w29_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w29_1 != y) { clearInterval(myVar); return;}
+        if(w29xRock1 == false) {
+          clearInterval(myVar); 
+          w29xRock1 = true;
+          document.getElementById("w29Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w29Image").style.visibility = "visible";
+            document.getElementById("w29Div").style.border = "2px solid #000";
+            w29Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w29Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld29Rock2Timer(value) {
+      w29Rock2Timer = false;
+      if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+      w29_2++;
+      var y = w29_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w29_2 != y) { clearInterval(myVar); return;}
+        if(w29xRock2 == false) {
+          clearInterval(myVar); 
+          w29xRock2 = true;
+          document.getElementById("w29Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w29Image").style.visibility = "visible";
+            document.getElementById("w29Div").style.border = "2px solid #000";
+            w29Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w29Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld29Rock3Timer(value) {
+      w29Rock3Timer = false;
+      if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+      w29_3++;
+      var y = w29_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w29_3 != y) { clearInterval(myVar); return;}
+        if(w29xRock3 == false) {
+          clearInterval(myVar); 
+          w29xRock3 = true;
+          document.getElementById("w29Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w29Image").style.visibility = "visible";
+            document.getElementById("w29Div").style.border = "2px solid #000";
+            w29Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w29Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+       
+    //WORLD33
+    function resetWorld33Rock1Timer(value) {
+      w33Rock1Timer = false;
+      if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+      w33_1++;
+      var y = w33_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w33_1 != y) { clearInterval(myVar); return;}
+        if(w33xRock1 == false) {
+          clearInterval(myVar); 
+          w33xRock1 = true;
+          document.getElementById("w33Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w33Image").style.visibility = "visible";
+            document.getElementById("w33Div").style.border = "2px solid #000";
+            w33Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w33Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld33Rock2Timer(value) {
+      w33Rock2Timer = false;
+      if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+      w33_2++;
+      var y = w33_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w33_2 != y) { clearInterval(myVar); return;}
+        if(w33xRock2 == false) {
+          clearInterval(myVar); 
+          w33xRock2 = true;
+          document.getElementById("w33Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w33Image").style.visibility = "visible";
+            document.getElementById("w33Div").style.border = "2px solid #000";
+            w33Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w33Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld33Rock3Timer(value) {
+      w33Rock3Timer = false;
+      if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+      w33_3++;
+      var y = w33_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w33_3 != y) { clearInterval(myVar); return;}
+        if(w33xRock3 == false) {
+          clearInterval(myVar); 
+          w33xRock3 = true;
+          document.getElementById("w33Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w33Image").style.visibility = "visible";
+            document.getElementById("w33Div").style.border = "2px solid #000";
+            w33Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w33Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD34   
+    function resetWorld34Rock1Timer(value) {
+      w34Rock1Timer = false;
+      if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+      w34_1++;
+      var y = w34_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w34_1 != y) { clearInterval(myVar); return;}
+        if(w34xRock1 == false) {
+          clearInterval(myVar); 
+          w34xRock1 = true;
+          document.getElementById("w34Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w34Image").style.visibility = "visible";
+            document.getElementById("w34Div").style.border = "2px solid #000";
+            w34Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w34Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld34Rock2Timer(value) {
+      w34Rock2Timer = false;
+      if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+      w34_2++;
+      var y = w34_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w34_2 != y) { clearInterval(myVar); return;}
+        if(w34xRock2 == false) {
+          clearInterval(myVar); 
+          w34xRock2 = true;
+          document.getElementById("w34Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w34Image").style.visibility = "visible";
+            document.getElementById("w34Div").style.border = "2px solid #000";
+            w34Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w34Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld34Rock3Timer(value) {
+      w34Rock3Timer = false;
+      if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+      w34_3++;
+      var y = w34_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w34_3 != y) { clearInterval(myVar); return;}
+        if(w34xRock3 == false) {
+          clearInterval(myVar); 
+          w34xRock3 = true;
+          document.getElementById("w34Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w34Image").style.visibility = "visible";
+            document.getElementById("w34Div").style.border = "2px solid #000";
+            w34Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w34Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+       
+    
+    //WORLD38
+    function resetWorld38Rock1Timer(value) {
+      w38Rock1Timer = false;
+      if(w38Rock1Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+      w38_1++;
+      var y = w38_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w38_1 != y) { clearInterval(myVar); return;}
+        if(w38xRock1 == false) {
+          clearInterval(myVar); 
+          w38xRock1 = true;
+          document.getElementById("w38Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w38Image").style.visibility = "visible";
+            document.getElementById("w38Div").style.border = "2px solid #000";
+            w38Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w38Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld38Rock2Timer(value) {
+      w38Rock2Timer = false;
+      if(w38Rock1Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+      w38_2++;
+      var y = w38_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w38_2 != y) { clearInterval(myVar); return;}
+        if(w38xRock2 == false) {
+          clearInterval(myVar); 
+          w38xRock2 = true;
+          document.getElementById("w38Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w38Image").style.visibility = "visible";
+            document.getElementById("w38Div").style.border = "2px solid #000";
+            w38Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w38Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld38Rock3Timer(value) {
+      w38Rock1Timer = false;
+      if(w38Rock3Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+      w38_3++;
+      var y = w38_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w38_3 != y) { clearInterval(myVar); return;}
+        if(w38xRock3 == false) {
+          clearInterval(myVar); 
+          w38xRock3 = true;
+          document.getElementById("w38Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w38Image").style.visibility = "visible";
+            document.getElementById("w38Div").style.border = "2px solid #000";
+            w38Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w38Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+        
+    
+    //WORLD41   
+    function resetWorld41Rock1Timer(value) {
+      w41Rock1Timer = false;
+      if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+      w41_1++;
+      var y = w41_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w41_1 != y) { clearInterval(myVar); return;}
+        if(w41xRock1 == false) {
+          clearInterval(myVar); 
+          w41xRock1 = true;
+          document.getElementById("w41Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w41Image").style.visibility = "visible";
+            document.getElementById("w41Div").style.border = "2px solid #000";
+            w41Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w41Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld41Rock2Timer(value) {
+      w41Rock2Timer = false;
+      if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+      w41_2++;
+      var y = w41_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w41_2 != y) { clearInterval(myVar); return;}
+        if(w41xRock2 == false) {
+          clearInterval(myVar); 
+          w41xRock2 = true;
+          document.getElementById("w41Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w41Image").style.visibility = "visible";
+            document.getElementById("w41Div").style.border = "2px solid #000";
+            w41Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w41Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld41Rock3Timer(value) {
+      w41Rock3Timer = false;
+      if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+      w41_3++;
+      var y = w41_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w41_3 != y) { clearInterval(myVar); return;}
+        if(w41xRock3 == false) {
+          clearInterval(myVar); 
+          w41xRock3 = true;
+          document.getElementById("w41Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w41Image").style.visibility = "visible";
+            document.getElementById("w41Div").style.border = "2px solid #000";
+            w41Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w41Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+       
+    //WORLD43
+    function resetWorld43Rock1Timer(value) {
+      w43Rock1Timer = false;
+      if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+      w43_1++;
+      var y = w43_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w43_1 != y) { clearInterval(myVar); return;}
+        if(w43xRock1 == false) {
+          clearInterval(myVar); 
+          w43xRock1 = true;
+          document.getElementById("w43Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w43Image").style.visibility = "visible";
+            document.getElementById("w43Div").style.border = "2px solid #000";
+            w43Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w43Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld43Rock2Timer(value) {
+      w43Rock2Timer = false;
+      if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+      w43_2++;
+      var y = w43_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w43_2 != y) { clearInterval(myVar); return;}
+        if(w43xRock2 == false) {
+          clearInterval(myVar); 
+          w43xRock2 = true;
+          document.getElementById("w43Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w43Image").style.visibility = "visible";
+            document.getElementById("w43Div").style.border = "2px solid #000";
+            w43Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w43Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld43Rock3Timer(value) {
+      w43Rock3Timer = false;
+      if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+      w43_3++;
+      var y = w43_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w43_3 != y) { clearInterval(myVar); return;}
+        if(w43xRock3 == false) {
+          clearInterval(myVar); 
+          w43xRock3 = true;
+          document.getElementById("w43Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w43Image").style.visibility = "visible";
+            document.getElementById("w43Div").style.border = "2px solid #000";
+            w43Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w43Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+  
+    //WORLD57
+    function resetWorld57Rock1Timer(value) {
+      w57Rock1Timer = false;
+      if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+      w57_1++;
+      var y = w57_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w57_1 != y) { clearInterval(myVar); return;}
+        if(w57xRock1 == false) {
+          clearInterval(myVar); 
+          w57xRock1 = true;
+          document.getElementById("w57Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w57Image").style.visibility = "visible";
+            document.getElementById("w57Div").style.border = "2px solid #000";
+            w57Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w57Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld57Rock2Timer(value) {
+      w57Rock2Timer = false;
+      if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+      w57_2++;
+      var y = w57_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w57_2 != y) { clearInterval(myVar); return;}
+        if(w57xRock2 == false) {
+          clearInterval(myVar); 
+          w57xRock2 = true;
+          document.getElementById("w57Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w57Image").style.visibility = "visible";
+            document.getElementById("w57Div").style.border = "2px solid #000";
+            w57Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w57Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld57Rock3Timer(value) {
+      w57Rock3Timer = false;
+      if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+      w57_3++;
+      var y = w57_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w57_3 != y) { clearInterval(myVar); return;}
+        if(w57xRock3 == false) {
+          clearInterval(myVar); 
+          w57xRock3 = true;
+          document.getElementById("w57Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w57Image").style.visibility = "visible";
+            document.getElementById("w57Div").style.border = "2px solid #000";
+            w57Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w57Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD61
+    function resetWorld61Rock1Timer(value) {
+      w61Rock1Timer = false;
+      if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+      w61_1++;
+      var y = w61_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w61_1 != y) { clearInterval(myVar); return;}
+        if(w61xRock1 == false) {
+          clearInterval(myVar); 
+          w61xRock1 = true;
+          document.getElementById("w61Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w61Image").style.visibility = "visible";
+            document.getElementById("w61Div").style.border = "2px solid #000";
+            w61Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w61Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld61Rock2Timer(value) {
+      w61Rock2Timer = false;
+      if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+      w61_2++;
+      var y = w61_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w61_2 != y) { clearInterval(myVar); return;}
+        if(w61xRock2 == false) {
+          clearInterval(myVar); 
+          w61xRock2 = true;
+          document.getElementById("w61Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w61Image").style.visibility = "visible";
+            document.getElementById("w61Div").style.border = "2px solid #000";
+            w61Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w61Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld61Rock3Timer(value) {
+      w61Rock3Timer = false;
+      if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+      w61_3++;
+      var y = w61_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w61_3 != y) { clearInterval(myVar); return;}
+        if(w61xRock3 == false) {
+          clearInterval(myVar); 
+          w61xRock3 = true;
+          document.getElementById("w61Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w61Image").style.visibility = "visible";
+            document.getElementById("w61Div").style.border = "2px solid #000";
+            w61Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w61Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD80  
+    function resetWorld80Rock1Timer(value) {
+      w80Rock1Timer = false;
+      if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+      w80_1++;
+      var y = w80_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w80_1 != y) { clearInterval(myVar); return;}
+        if(w80xRock1 == false) {
+          clearInterval(myVar); 
+          w80xRock1 = true;
+          document.getElementById("w80Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w80Image").style.visibility = "visible";
+            document.getElementById("w80Div").style.border = "2px solid #000";
+            w80Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w80Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld80Rock2Timer(value) {
+      w80Rock2Timer = false;
+      if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+      w80_2++;
+      var y = w80_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w80_2 != y) { clearInterval(myVar); return;}
+        if(w80xRock2 == false) {
+          clearInterval(myVar); 
+          w80xRock2 = true;
+          document.getElementById("w80Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w80Image").style.visibility = "visible";
+            document.getElementById("w80Div").style.border = "2px solid #000";
+            w80Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w80Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld80Rock3Timer(value) {
+      w80Rock3Timer = false;
+      if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+      w80_3++;
+      var y = w80_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w80_3 != y) { clearInterval(myVar); return;}
+        if(w80xRock3 == false) {
+          clearInterval(myVar); 
+          w80xRock3 = true;
+          document.getElementById("w80Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w80Image").style.visibility = "visible";
+            document.getElementById("w80Div").style.border = "2px solid #000";
+            w80Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w80Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+
+    
+    
+    //WORLD81
+    function resetWorld81Rock1Timer(value) {
+      w81Rock1Timer = false;
+      if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+      w81_1++;
+      var y = w81_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w81_1 != y) { clearInterval(myVar); return;}
+        if(w81xRock1 == false) {
+          clearInterval(myVar); 
+          w81xRock1 = true;
+          document.getElementById("w81Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w81Image").style.visibility = "visible";
+            document.getElementById("w81Div").style.border = "2px solid #000";
+            w81Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w81Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld81Rock2Timer(value) {
+      w81Rock2Timer = false;
+      if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+      w81_2++;
+      var y = w81_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w81_2 != y) { clearInterval(myVar); return;}
+        if(w81xRock2 == false) {
+          clearInterval(myVar); 
+          w81xRock2 = true;
+          document.getElementById("w81Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w81Image").style.visibility = "visible";
+            document.getElementById("w81Div").style.border = "2px solid #000";
+            w81Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w81Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld81Rock3Timer(value) {
+      w81Rock3Timer = false;
+      if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+      w81_3++;
+      var y = w81_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w81_3 != y) { clearInterval(myVar); return;}
+        if(w81xRock3 == false) {
+          clearInterval(myVar); 
+          w81xRock3 = true;
+          document.getElementById("w81Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w81Image").style.visibility = "visible";
+            document.getElementById("w81Div").style.border = "2px solid #000";
+            w81Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w81Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+   
+       
+    //WORLD108
+    function resetWorld108Rock1Timer(value) {
+      w108Rock1Timer = false;
+      if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+      w108_1++;
+      var y = w108_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w108_1 != y) { clearInterval(myVar); return;}
+        if(w108xRock1 == false) {
+          clearInterval(myVar); 
+          w108xRock1 = true;
+          document.getElementById("w108Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w108Image").style.visibility = "visible";
+            document.getElementById("w108Div").style.border = "2px solid #000";
+            w108Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w108Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld108Rock2Timer(value) {
+      w108Rock2Timer = false;
+      if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+      w108_2++;
+      var y = w108_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w108_2 != y) { clearInterval(myVar); return;}
+        if(w108xRock2 == false) {
+          clearInterval(myVar); 
+          w108xRock2 = true;
+          document.getElementById("w108Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w108Image").style.visibility = "visible";
+            document.getElementById("w108Div").style.border = "2px solid #000";
+            w108Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w108Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld108Rock3Timer(value) {
+      w108Rock3Timer = false;
+      if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+      w108_3++;
+      var y = w108_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w108_3 != y) { clearInterval(myVar); return;}
+        if(w108xRock3 == false) {
+          clearInterval(myVar); 
+          w108xRock3 = true;
+          document.getElementById("w108Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w108Image").style.visibility = "visible";
+            document.getElementById("w108Div").style.border = "2px solid #000";
+            w108Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w108Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+  
+    //WORLD120
+    function resetWorld120Rock1Timer(value) {
+      w120Rock1Timer = false;
+      if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+      w120_1++;
+      var y = w120_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w120_1 != y) { clearInterval(myVar); return;}
+        if(w120xRock1 == false) {
+          clearInterval(myVar); 
+          w120xRock1 = true;
+          document.getElementById("w120Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w120Image").style.visibility = "visible";
+            document.getElementById("w120Div").style.border = "2px solid #000";
+            w120Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w120Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld120Rock2Timer(value) {
+      w120Rock2Timer = false;
+      if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+      w120_2++;
+      var y = w120_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w120_2 != y) { clearInterval(myVar); return;}
+        if(w120xRock2 == false) {
+          clearInterval(myVar); 
+          w120xRock2 = true;
+          document.getElementById("w120Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w120Image").style.visibility = "visible";
+            document.getElementById("w120Div").style.border = "2px solid #000";
+            w120Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w120Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld120Rock3Timer(value) {
+      w120Rock3Timer = false;
+      if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+      w120_3++;
+      var y = w120_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w120_3 != y) { clearInterval(myVar); return;}
+        if(w120xRock3 == false) {
+          clearInterval(myVar); 
+          w120xRock3 = true;
+          document.getElementById("w120Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w120Image").style.visibility = "visible";
+            document.getElementById("w120Div").style.border = "2px solid #000";
+            w120Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w120Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    
+    //WORLD135
+    function resetWorld135Rock1Timer(value) {
+      w135Rock1Timer = false;
+      if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+      w135_1++;
+      var y = w135_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w135_1 != y) { clearInterval(myVar); return;}
+        if(w135xRock1 == false) {
+          clearInterval(myVar); 
+          w135xRock1 = true;
+          document.getElementById("w135Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w135Image").style.visibility = "visible";
+            document.getElementById("w135Div").style.border = "2px solid #000";
+            w135Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w135Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld135Rock2Timer(value) {
+      w135Rock2Timer = false;
+      if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+      w135_2++;
+      var y = w135_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w135_2 != y) { clearInterval(myVar); return;}
+        if(w135xRock2 == false) {
+          clearInterval(myVar); 
+          w135xRock2 = true;
+          document.getElementById("w135Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w135Image").style.visibility = "visible";
+            document.getElementById("w135Div").style.border = "2px solid #000";
+            w135Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w135Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld135Rock3Timer(value) {
+      w135Rock3Timer = false;
+      if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+      w135_3++;
+      var y = w135_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w135_3 != y) { clearInterval(myVar); return;}
+        if(w135xRock3 == false) {
+          clearInterval(myVar); 
+          w135xRock3 = true;
+          document.getElementById("w135Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w135Image").style.visibility = "visible";
+            document.getElementById("w135Div").style.border = "2px solid #000";
+            w135Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w135Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+   
+    //WORLD136
+    function resetWorld136Rock1Timer(value) {
+      w136Rock1Timer = false;
+      if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+      w136_1++;
+      var y = w136_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w136_1 != y) { clearInterval(myVar); return;}
+        if(w136xRock1 == false) {
+          clearInterval(myVar); 
+          w136xRock1 = true;
+          document.getElementById("w136Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w136Image").style.visibility = "visible";
+            document.getElementById("w136Div").style.border = "2px solid #000";
+            w136Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w136Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld136Rock2Timer(value) {
+      w136Rock2Timer = false;
+      if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+      w136_2++;
+      var y = w136_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w136_2 != y) { clearInterval(myVar); return;}
+        if(w136xRock2 == false) {
+          clearInterval(myVar); 
+          w136xRock2 = true;
+          document.getElementById("w136Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w136Image").style.visibility = "visible";
+            document.getElementById("w136Div").style.border = "2px solid #000";
+            w136Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w136Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld136Rock3Timer(value) {
+      w136Rock3Timer = false;
+      if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+      w136_3++;
+      var y = w136_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w136_3 != y) { clearInterval(myVar); return;}
+        if(w136xRock3 == false) {
+          clearInterval(myVar); 
+          w136xRock3 = true;
+          document.getElementById("w136Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w136Image").style.visibility = "visible";
+            document.getElementById("w136Div").style.border = "2px solid #000";
+            w136Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w136Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+   
+    //WORLD141
+    function resetWorld141Rock1Timer(value) {
+      w141Rock1Timer = false;
+      if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+      w141_1++;
+      var y = w141_1;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w141_1 != y) { clearInterval(myVar); return;}
+        if(w141xRock1 == false) {
+          clearInterval(myVar); 
+          w141xRock1 = true;
+          document.getElementById("w141Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w141Image").style.visibility = "visible";
+            document.getElementById("w141Div").style.border = "2px solid #000";
+            w141Rock1Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w141Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld141Rock2Timer(value) {
+      w141Rock2Timer = false;
+      if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+      w141_2++;
+      var y = w141_2;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w141_2 != y) { clearInterval(myVar); return;}
+        if(w141xRock2 == false) {
+          clearInterval(myVar); 
+          w141xRock2 = true;
+          document.getElementById("w141Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w141Image").style.visibility = "visible";
+            document.getElementById("w141Div").style.border = "2px solid #000";
+            w141Rock2Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w141Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    function resetWorld141Rock3Timer(value) {
+      w141Rock3Timer = false;
+      if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+      w141_3++;
+      var y = w141_3;
+      var sec = seconds + 1;
+      var min = minutes;
+      var handler = function() {
+        if(w141_3 != y) { clearInterval(myVar); return;}
+        if(w141xRock3 == false) {
+          clearInterval(myVar); 
+          w141xRock3 = true;
+          document.getElementById("w141Div").style.border = "2px solid #000"; 
+          return;
+        }
+        if (--sec === -1) {
+          sec = 59;
+          if (--min === -1) {
+            sec = 0;
+            min = 0;
+            clearInterval(myVar);
+            document.getElementById("w141Image").style.visibility = "visible";
+            document.getElementById("w141Div").style.border = "2px solid #000";
+            w141Rock3Timer = true;
+          }
+        }
+        if (min === 0 && sec !== 0) {
+            document.getElementById("w141Div").style.border = "2px solid #f00";  
+        }
+        document.getElementById(value).innerHTML = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+      };
+      var myVar = setInterval(handler, 1000);
+      handler();
+    }
+    
+    
+    //RESET X BUTTONS
+    function xResetTimer(p) {
+      if(p == "world3timer1") {
+        w3xRock1 = false;
+        w3Rock1Timer = false;
+        if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+        document.getElementById("w3Div").style.border = "2px solid #000";
+      } else if (p == "world3timer2") {
+        w3xRock2 = false;
+        w3Rock2Timer = false;
+        if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+        document.getElementById("w3Div").style.border = "2px solid #000";
+      } else if (p == "world3timer3") {
+        w3xRock3 = false;
+        w3Rock3Timer = false;
+        if(w3Rock1Timer == false && w3Rock2Timer == false && w3Rock3Timer == false) {document.getElementById("w3Image").style.visibility = "hidden";}
+        document.getElementById("w3Div").style.border = "2px solid #000";
+      } else if (p == "world7timer1") {
+        w7xRock1 = false;
+        w7Rock1Timer = false;
+        if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+        document.getElementById("w7Div").style.border = "2px solid #000";
+      } else if (p == "world7timer2") {
+        w7xRock2 = false;
+        w7Rock2Timer = false;
+        if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+        document.getElementById("w7Div").style.border = "2px solid #000";
+      } else if (p == "world7timer3") {
+        w7xRock3 = false;
+        w7Rock3Timer = false;
+        if(w7Rock1Timer == false && w7Rock2Timer == false && w7Rock3Timer == false) {document.getElementById("w7Image").style.visibility = "hidden";}
+        document.getElementById("w7Div").style.border = "2px solid #000";
+      } else if (p == "world8timer1") {
+        w8xRock1 = false;
+        w8Rock1Timer = false;
+        if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+        document.getElementById("w8Div").style.border = "2px solid #000";
+      } else if (p == "world8timer2") {
+        w8xRock2 = false;
+        w8Rock2Timer = false;
+        if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+        document.getElementById("w8Div").style.border = "2px solid #000";
+      } else if (p == "world8timer3") {
+        w8xRock3 = false;
+        w8Rock3Timer = false;
+        if(w8Rock1Timer == false && w8Rock2Timer == false && w8Rock3Timer == false) {document.getElementById("w8Image").style.visibility = "hidden";}
+        document.getElementById("w8Div").style.border = "2px solid #000";
+      } else if (p == "world11timer1") {
+        w11xRock1 = false;
+        w11Rock1Timer = false;
+        if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+        document.getElementById("w11Div").style.border = "2px solid #000";
+      } else if (p == "world11timer2") {
+        w11xRock2 = false;
+        w11Rock2Timer = false;
+        if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+        document.getElementById("w11Div").style.border = "2px solid #000";
+      } else if (p == "world11timer3") {
+        w11xRock3 = false;
+        w11Rock3Timer = false;
+        if(w11Rock1Timer == false && w11Rock2Timer == false && w11Rock3Timer == false) {document.getElementById("w11Image").style.visibility = "hidden";}
+        document.getElementById("w11Div").style.border = "2px solid #000";
+      } else if (p == "world17timer1") {
+        w17xRock1 = false;
+        w17Rock1Timer = false;
+        if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+        document.getElementById("w17Div").style.border = "2px solid #000";
+      } else if (p == "world17timer2") {
+        w17xRock2 = false;
+        w17Rock2Timer = false;
+        if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+        document.getElementById("w17Div").style.border = "2px solid #000";
+      } else if (p == "world17timer3") {
+        w17xRock3 = false;
+        w17Rock1Timer = false;
+        if(w17Rock1Timer == false && w17Rock2Timer == false && w17Rock3Timer == false) {document.getElementById("w17Image").style.visibility = "hidden";}
+        document.getElementById("w17Div").style.border = "2px solid #000";
+      } else if (p == "world19timer1") {
+        w19xRock1 = false;
+        w19Rock1Timer = false;
+        if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+        document.getElementById("w19Div").style.border = "2px solid #000";
+      } else if (p == "world19timer2") {
+        w19xRock2 = false;
+        w19Rock2Timer = false;
+        if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+        document.getElementById("w19Div").style.border = "2px solid #000";
+      } else if (p == "world19timer3") {
+        w19xRock3 = false;
+        w19Rock3Timer = false;
+        if(w19Rock1Timer == false && w19Rock2Timer == false && w19Rock3Timer == false) {document.getElementById("w19Image").style.visibility = "hidden";}
+        document.getElementById("w19Div").style.border = "2px solid #000";
+      } else if (p == "world20timer1") {
+        w20xRock1 = false;
+        w20Rock1Timer = false;
+        if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+        document.getElementById("w20Div").style.border = "2px solid #000";
+      } else if (p == "world20timer2") {
+        w20xRock2 = false;
+        w20Rock2Timer = false;
+        if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+        document.getElementById("w20Div").style.border = "2px solid #000";
+      } else if (p == "world20timer3") {
+        w20xRock3 = false;
+        w20Rock3Timer = false;
+        if(w20Rock1Timer == false && w20Rock2Timer == false && w20Rock3Timer == false) {document.getElementById("w20Image").style.visibility = "hidden";}
+        document.getElementById("w20Div").style.border = "2px solid #000";
+      } else if (p == "world29timer1") {
+        w29xRock1 = false;
+        w29Rock1Timer = false;
+        if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+        document.getElementById("w29Div").style.border = "2px solid #000";
+      } else if (p == "world29timer2") {
+        w29xRock2 = false;
+        w29Rock2Timer = false;
+        if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+        document.getElementById("w29Div").style.border = "2px solid #000";
+      } else if (p == "world29timer3") {
+        w29xRock3 = false;
+        w29Rock3Timer = false;
+        if(w29Rock1Timer == false && w29Rock2Timer == false && w29Rock3Timer == false) {document.getElementById("w29Image").style.visibility = "hidden";}
+        document.getElementById("w29Div").style.border = "2px solid #000";
+      } else if (p == "world33timer1") {
+        w33xRock1 = false;
+        w33Rock1Timer = false;
+        if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+        document.getElementById("w33Div").style.border = "2px solid #000";
+      } else if (p == "world33timer2") {
+        w33xRock2 = false;
+        w33Rock2Timer = false;
+        if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+        document.getElementById("w33Div").style.border = "2px solid #000";
+      } else if (p == "world33timer3") {
+        w33xRock3 = false;
+        w33Rock3Timer = false;
+        if(w33Rock1Timer == false && w33Rock2Timer == false && w33Rock3Timer == false) {document.getElementById("w33Image").style.visibility = "hidden";}
+        document.getElementById("w33Div").style.border = "2px solid #000";
+      } else if (p == "world34timer1") {
+        w34xRock1 = false;
+        w34Rock1Timer = false;
+        if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+        document.getElementById("w34Div").style.border = "2px solid #000";
+      } else if (p == "world34timer2") {
+        w34xRock2 = false;
+        w34Rock2Timer = false;
+        if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+        document.getElementById("w34Div").style.border = "2px solid #000";
+      } else if (p == "world34timer3") {
+        w34xRock3 = false;
+        w34Rock3Timer = false;
+        if(w34Rock1Timer == false && w34Rock2Timer == false && w34Rock3Timer == false) {document.getElementById("w34Image").style.visibility = "hidden";}
+        document.getElementById("w34Div").style.border = "2px solid #000";
+      } else if (p == "world38timer1") {
+        w38xRock1 = false;
+        w38Rock1Timer = false;
+        if(w38Rock1Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+        document.getElementById("w38Div").style.border = "2px solid #000";
+      } else if (p == "world38timer2") {
+        w38xRock2 = false;
+        w38Rock2Timer = false;
+        if(w38Rock1Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+        document.getElementById("w38Div").style.border = "2px solid #000";
+      } else if (p == "world38timer3") {
+        w38xRock3 = false;
+        w38Rock3Timer = false;
+        if(w38Rock1Timer == false && w38Rock2Timer == false && w38Rock3Timer == false) {document.getElementById("w38Image").style.visibility = "hidden";}
+        document.getElementById("w38Div").style.border = "2px solid #000";
+      } else if (p == "world41timer1") {
+        w41xRock1 = false;
+        w41Rock1Timer = false;
+        if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+        document.getElementById("w41Div").style.border = "2px solid #000";
+      } else if (p == "world41timer2") {
+        w41xRock2 = false;
+        w41Rock2Timer = false;
+        if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+        document.getElementById("w41Div").style.border = "2px solid #000";
+      } else if (p == "world41timer3") {
+        w41xRock3 = false;
+        w41Rock3Timer = false;
+        if(w41Rock1Timer == false && w41Rock2Timer == false && w41Rock3Timer == false) {document.getElementById("w41Image").style.visibility = "hidden";}
+        document.getElementById("w41Div").style.border = "2px solid #000";
+      } else if (p == "world43timer1") {
+        w43xRock1 = false;
+        w43Rock1Timer = false;
+        if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+        document.getElementById("w43Div").style.border = "2px solid #000";
+      } else if (p == "world43timer2") {
+        w43xRock2 = false;
+        w43Rock2Timer = false;
+        if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+        document.getElementById("w43Div").style.border = "2px solid #000";
+      } else if (p == "world43timer3") {
+        w43xRock3 = false;
+        w43Rock3Timer = false;
+        if(w43Rock1Timer == false && w43Rock2Timer == false && w43Rock3Timer == false) {document.getElementById("w43Image").style.visibility = "hidden";}
+        document.getElementById("w43Div").style.border = "2px solid #000";
+      } else if (p == "world57timer1") {
+        w57xRock1 = false;
+        w57Rock1Timer = false;
+        if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+        document.getElementById("w57Div").style.border = "2px solid #000";
+      } else if (p == "world57timer2") {
+        w57xRock2 = false;
+        w57Rock2Timer = false;
+        if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+        document.getElementById("w57Div").style.border = "2px solid #000";
+      } else if (p == "world57timer3") {
+        w57xRock3 = false;
+        w57Rock3Timer = false;
+        if(w57Rock1Timer == false && w57Rock2Timer == false && w57Rock3Timer == false) {document.getElementById("w57Image").style.visibility = "hidden";}
+        document.getElementById("w57Div").style.border = "2px solid #000";
+      } else if (p == "world61timer1") {
+        w61xRock1 = false;
+        w61Rock1Timer = false;
+        if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+        document.getElementById("w61Div").style.border = "2px solid #000";
+      } else if (p == "world61timer2") {
+        w61xRock2 = false;
+        w61Rock2Timer = false;
+        if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+        document.getElementById("w61Div").style.border = "2px solid #000";
+      } else if (p == "world61timer3") {
+        w61xRock3 = false;
+        w61Rock3Timer = false;
+        if(w61Rock1Timer == false && w61Rock2Timer == false && w61Rock3Timer == false) {document.getElementById("w61Image").style.visibility = "hidden";}
+        document.getElementById("w61Div").style.border = "2px solid #000";
+      } else if (p == "world80timer1") {
+        w80xRock1 = false;
+        w80Rock1Timer = false;
+        if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+        document.getElementById("w80Div").style.border = "2px solid #000";
+      } else if (p == "world80timer2") {
+        w80xRock2 = false;
+        w80Rock2Timer = false;
+        if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+        document.getElementById("w80Div").style.border = "2px solid #000";
+      } else if (p == "world80timer3") {
+        w80xRock3 = false;
+        w80Rock3Timer = false;
+        if(w80Rock1Timer == false && w80Rock2Timer == false && w80Rock3Timer == false) {document.getElementById("w80Image").style.visibility = "hidden";}
+        document.getElementById("w80Div").style.border = "2px solid #000";
+      } else if (p == "world81timer1") {
+        w81xRock1 = false;
+        w81Rock1Timer = false;
+        if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+        document.getElementById("w81Div").style.border = "2px solid #000";
+      } else if (p == "world81timer2") {
+        w81xRock2 = false;
+        w81Rock2Timer = false;
+        if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+        document.getElementById("w81Div").style.border = "2px solid #000";
+      } else if (p == "world81timer3") {
+        w81xRock3 = false;
+        w81Rock3Timer = false;
+        if(w81Rock1Timer == false && w81Rock2Timer == false && w81Rock3Timer == false) {document.getElementById("w81Image").style.visibility = "hidden";}
+        document.getElementById("w81Div").style.border = "2px solid #000";
+      } else if (p == "world108timer1") {
+        w108xRock1 = false;
+        w108Rock1Timer = false;
+        if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+        document.getElementById("w108Div").style.border = "2px solid #000";
+      } else if (p == "world108timer2") {
+        w108xRock2 = false;
+        w108Rock2Timer = false;
+        if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+        document.getElementById("w108Div").style.border = "2px solid #000";
+      } else if (p == "world108timer3") {
+        w108xRock3 = false;
+        w108Rock3Timer = false;
+        if(w108Rock1Timer == false && w108Rock2Timer == false && w108Rock3Timer == false) {document.getElementById("w108Image").style.visibility = "hidden";}
+        document.getElementById("w108Div").style.border = "2px solid #000";
+      } else if (p == "world120timer1") {
+        w120xRock1 = false;
+        w120Rock1Timer = false;
+        if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+        document.getElementById("w120Div").style.border = "2px solid #000";
+      } else if (p == "world120timer2") {
+        w120xRock2 = false;
+        w120Rock2Timer = false;
+        if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+        document.getElementById("w120Div").style.border = "2px solid #000";
+      } else if (p == "world120timer3") {
+        w120xRock3 = false;
+        w120Rock3Timer = false;
+        if(w120Rock1Timer == false && w120Rock2Timer == false && w120Rock3Timer == false) {document.getElementById("w120Image").style.visibility = "hidden";}
+        document.getElementById("w120Div").style.border = "2px solid #000";
+      } else if (p == "world135timer1") {
+        w135xRock1 = false;
+        w135Rock1Timer = false;
+        if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+        document.getElementById("w135Div").style.border = "2px solid #000";
+      } else if (p == "world135timer2") {
+        w135xRock2 = false;
+        w135Rock2Timer = false;
+        if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+        document.getElementById("w135Div").style.border = "2px solid #000";
+      } else if (p == "world135timer3") {
+        w135xRock3 = false;
+        w135Rock3Timer = false;
+        if(w135Rock1Timer == false && w135Rock2Timer == false && w135Rock3Timer == false) {document.getElementById("w135Image").style.visibility = "hidden";}
+        document.getElementById("w135Div").style.border = "2px solid #000";
+      } else if (p == "world136timer1") {
+        w136xRock1 = false;
+        w136Rock1Timer = false;
+        if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+        document.getElementById("w136Div").style.border = "2px solid #000";
+      } else if (p == "world136timer2") {
+        w136xRock2 = false;
+        w136Rock2Timer = false;
+        if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+        document.getElementById("w136Div").style.border = "2px solid #000";
+      } else if (p == "world136timer3") {
+        w136xRock3 = false;
+        w136Rock3Timer = false;
+        if(w136Rock1Timer == false && w136Rock2Timer == false && w136Rock3Timer == false) {document.getElementById("w136Image").style.visibility = "hidden";}
+        document.getElementById("w136Div").style.border = "2px solid #000";
+      } else if (p == "world141timer1") {
+        w141xRock1 = false;
+        w141Rock1Timer = false;
+        if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+        document.getElementById("w141Div").style.border = "2px solid #000";
+      } else if (p == "world141timer2") {
+        w141xRock2 = false;
+        w141Rock2Timer = false;
+        if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+        document.getElementById("w141Div").style.border = "2px solid #000";
+      } else if (p == "world141timer3") {
+        w141xRock3 = false;
+        w141Rock3Timer = false;
+        if(w141Rock1Timer == false && w141Rock2Timer == false && w141Rock3Timer == false) {document.getElementById("w141Image").style.visibility = "hidden";}
+        document.getElementById("w141Div").style.border = "2px solid #000";
+      }
+      
+      document.getElementById(p).innerHTML="Unknown"; 
+    }
+    
+    function circleColorChange(id) {
+      if(document.getElementById(id).style.background == "" || document.getElementById(id).style.background == "white") {
+        document.getElementById(id).style.background = "#2196F3";  
+      } 
+      else if(document.getElementById(id).style.background == "rgb(33, 150, 243)") {
+        document.getElementById(id).style.background = "black";  
+      } 
+      else if(document.getElementById(id).style.background == "black") {
+        document.getElementById(id).style.background = "white";
+      }     
+    }
+    
+    function nightFunction() {
+      var checkBox = document.getElementById("nightModeInput");
+      var nightClassArrayList = document.getElementsByClassName("night");
+      var circleClassArrayList = document.getElementsByClassName("circle");
+      if (checkBox.checked == true){
+        document.body.style.backgroundColor = "#333";
+        for(var i = 0; i < nightClassArrayList.length; i++){
+          nightClassArrayList[i].style.color = "white";
+        }
+        for(var i = 0; i < circleClassArrayList.length; i++){
+          circleClassArrayList[i].style.border = "1px solid #fff";
+        }
+      } else {
+        document.body.style.backgroundColor = "white";
+        for(var i = 0; i < nightClassArrayList.length; i++){
+          nightClassArrayList[i].style.color = "black";
+        }
+        for(var i = 0; i < circleClassArrayList.length; i++){
+          circleClassArrayList[i].style.border = "1px solid #000";
+        }  
+      }
+    }
+    
+    function wildernessFunction() {
+      var checkBox = document.getElementById("wildernessInput");
+      var text = document.getElementById("respawnText");
+      var thirdRockArrayList = document.getElementsByClassName("disabledOnWilderness");
+      if (checkBox.checked == true){
+        minutes = 12;
+        seconds = 30;
+        text.innerHTML = "Runite ore respawn timer set to <b>" + minutes +" minutes and " + seconds + " seconds</b>.";
+        for(var i = 0; i < thirdRockArrayList.length; i++){
+          thirdRockArrayList[i].style.visibility = "hidden";
+        }
+      } else {
+        minutes = 18;
+        seconds = 4;
+        text.innerHTML = "Runite ore respawn timer set to <b>" + minutes + " minutes and " + seconds + " seconds</b>.";
+        for(var i = 0; i < thirdRockArrayList.length; i++){
+          thirdRockArrayList[i].style.visibility = "visible";
+        }
+      }
+    } 
+    
+  </script>
+  
+  </head>
+  <body>
+  <div id="header">
+    <h2 class="night">F2P RuneScape Runite Ore Respawn Timer -tool</h2>
+    <p class="night" style="float: left">Night mode</p>
+    <label class="switch">
+      <input type="checkbox" id="nightModeInput" onclick="nightFunction()">
+      <span class="slider"></span>
+    </label>
+    <br>
+    <p class="night" style="float:left; margin-right:4px">Wilderness</p>
+    <label class="switch">
+      <input type="checkbox" id="wildernessInput" onclick="wildernessFunction()">
+      <span class="slider"></span>
+    </label>
+    <br>
+    <p id="respawnText" class="night">Runite ore respawn timer set to <b>18 minutes and 4 seconds</b>.</p>
+  </div> 
+  
+  <div id="content"> 
+    <div class="worlds" id="w3Div">
+      <div class="circle" id="w3Circle" onclick="circleColorChange('w3Circle')"></div>
+      <input type="text" value="World 3 - Trade"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world3timer1')">x</button>
+      <button type="button" onclick="resetWorld3Rock1Timer('world3timer1'); document.getElementById('w3Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w3Image" alt="w3Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world3timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world3timer2')">x</button>
+      <button type="button" onclick="resetWorld3Rock2Timer('world3timer2'); document.getElementById('w3Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world3timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world3timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld3Rock3Timer('world3timer3'); document.getElementById('w3Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world3timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w7Div">
+      <div class="circle" id="w7Circle" onclick="circleColorChange('w7Circle')"></div>
+      <input type="text" value="World 7 - Dungeoneering"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world7timer1')">x</button>
+      <button type="button" onclick="resetWorld7Rock1Timer('world7timer1'); document.getElementById('w7Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w7Image" alt="w7Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world7timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world7timer2')">x</button>
+      <button type="button" onclick="resetWorld7Rock2Timer('world7timer2'); document.getElementById('w7Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world7timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world7timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld7Rock3Timer('world7timer3'); document.getElementById('w7Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world7timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w8Div">
+      <div class="circle" id="w8Circle" onclick="circleColorChange('w8Circle')"></div>
+      <input type="text" value="World 8 - Clan Recruitment"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world8timer1')">x</button>
+      <button type="button" onclick="resetWorld8Rock1Timer('world8timer1'); document.getElementById('w8Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w8Image" alt="w8Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world8timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world8timer2')">x</button>
+      <button type="button" onclick="resetWorld8Rock2Timer('world8timer2'); document.getElementById('w8Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world8timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world8timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld8Rock3Timer('world8timer3'); document.getElementById('w8Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world8timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w11Div">
+      <div class="circle" id="w11Circle" onclick="circleColorChange('w11Circle')"></div>
+      <input type="text" value="World 11 - UK"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world11timer1')">x</button>
+      <button type="button" onclick="resetWorld11Rock1Timer('world11timer1'); document.getElementById('w11Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w11Image" alt="w11Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world11timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world11timer2')">x</button>
+      <button type="button" onclick="resetWorld11Rock2Timer('world11timer2'); document.getElementById('w11Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world11timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world11timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld11Rock3Timer('world11timer3'); document.getElementById('w11Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world11timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w17Div">
+      <div class="circle" id="w17Circle" onclick="circleColorChange('w17Circle')"></div>
+      <input type="text" value="World 17 - Europe"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world17timer1')">x</button>
+      <button type="button" onclick="resetWorld17Rock1Timer('world17timer1'); document.getElementById('w17Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w17Image" alt="w17Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world17timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world17timer2')">x</button>
+      <button type="button" onclick="resetWorld17Rock2Timer('world17timer2'); document.getElementById('w17Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world17timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world17timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld17Rock3Timer('world17timer3'); document.getElementById('w17Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world17timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w19Div">
+      <div class="circle" id="w19Circle" onclick="circleColorChange('w19Circle')"></div>
+      <input type="text" value="World 19 - Netherlands"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world19timer1')">x</button>
+      <button type="button" onclick="resetWorld19Rock1Timer('world19timer1'); document.getElementById('w19Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w19Image" alt="w19Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world19timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world19timer2')">x</button>
+      <button type="button" onclick="resetWorld19Rock2Timer('world19timer2'); document.getElementById('w19Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world19timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world19timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld19Rock3Timer('world19timer3'); document.getElementById('w19Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world19timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w20Div">
+      <div class="circle" id="w20Circle" onclick="circleColorChange('w20Circle')"></div>
+      <input type="text" value="World 20 - Minigames"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world20timer1')">x</button>
+      <button type="button" onclick="resetWorld20Rock1Timer('world20timer1'); document.getElementById('w20Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w20Image" alt="w20Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world20timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world20timer2')">x</button>
+      <button type="button" onclick="resetWorld20Rock2Timer('world20timer2'); document.getElementById('w20Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world20timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world20timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld20Rock3Timer('world20timer3'); document.getElementById('w20Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world20timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w29Div">
+      <div class="circle" id="w29Circle" onclick="circleColorChange('w29Circle')"></div>
+      <input type="text" value="World 29 - Bonfires"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world29timer1')">x</button>
+      <button type="button" onclick="resetWorld29Rock1Timer('world29timer1'); document.getElementById('w29Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w29Image" alt="w29Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world29timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world29timer2')">x</button>
+      <button type="button" onclick="resetWorld29Rock2Timer('world29timer2'); document.getElementById('w29Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world29timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world29timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld29Rock3Timer('world29timer3'); document.getElementById('w29Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world29timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w33Div">
+      <div class="circle" id="w33Circle" onclick="circleColorChange('w33Circle')"></div>
+      <input type="text" value="World 33 - PK [LEGACY]"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world33timer1')">x</button>
+      <button type="button" onclick="resetWorld33Rock1Timer('world33timer1'); document.getElementById('w33Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w33Image" alt="w33Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world33timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world33timer2')">x</button>
+      <button type="button" onclick="resetWorld33Rock2Timer('world33timer2'); document.getElementById('w33Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world33timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world33timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld33Rock3Timer('world33timer3'); document.getElementById('w33Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world33timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w34Div">
+      <div class="circle" id="w34Circle" onclick="circleColorChange('w34Circle')"></div>
+      <input type="text" value="World 34 - United States"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world34timer1')">x</button>
+      <button type="button" onclick="resetWorld34Rock1Timer('world34timer1'); document.getElementById('w34Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w34Image" alt="w34Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world34timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world34timer2')">x</button>
+      <button type="button" onclick="resetWorld34Rock2Timer('world34timer2'); document.getElementById('w34Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world34timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world34timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld34Rock3Timer('world34timer3'); document.getElementById('w34Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world34timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w38Div">
+      <div class="circle" id="w38Circle" onclick="circleColorChange('w38Circle')"></div>
+      <input type="text" value="World 38 - RuneSpan"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world38timer1')">x</button>
+      <button type="button" onclick="resetWorld38Rock1Timer('world38timer1'); document.getElementById('w38Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w38Image" alt="w38Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world38timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world38timer2')">x</button>
+      <button type="button" onclick="resetWorld38Rock2Timer('world38timer2'); document.getElementById('w38Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world38timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world38timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld38Rock3Timer('world38timer3'); document.getElementById('w38Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world38timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w41Div">
+      <div class="circle" id="w41Circle" onclick="circleColorChange('w41Circle')"></div>
+      <input type="text" value="World 41 - Role-Playing"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world41timer1')">x</button>
+      <button type="button" onclick="resetWorld41Rock1Timer('world41timer1'); document.getElementById('w41Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w41Image" alt="w41Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world41timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world41timer2')">x</button>
+      <button type="button" onclick="resetWorld41Rock2Timer('world41timer2'); document.getElementById('w41Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world41timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world41timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld41Rock3Timer('world41timer3'); document.getElementById('w41Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world41timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w43Div">
+      <div class="circle" id="w43Circle" onclick="circleColorChange('w43Circle')"></div>
+      <input type="text" value="World 43 - Canada"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world43timer1')">x</button>
+      <button type="button" onclick="resetWorld43Rock1Timer('world43timer1'); document.getElementById('w43Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w43Image" alt="w43Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world43timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world43timer2')">x</button>
+      <button type="button" onclick="resetWorld43Rock2Timer('world43timer2'); document.getElementById('w43Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world43timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world43timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld43Rock3Timer('world43timer3'); document.getElementById('w43Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world43timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w57Div">
+      <div class="circle" id="w57Circle" onclick="circleColorChange('w57Circle')"></div>
+      <input type="text" value="World 57 - US [LEGACY]"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world57timer1')">x</button>
+      <button type="button" onclick="resetWorld57Rock1Timer('world57timer1'); document.getElementById('w57Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w57Image" alt="w57Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world57timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world57timer2')">x</button>
+      <button type="button" onclick="resetWorld57Rock2Timer('world57timer2'); document.getElementById('w57Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world57timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world57timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld57Rock3Timer('world57timer3'); document.getElementById('w57Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world57timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w61Div">
+      <div class="circle" id="w61Circle" onclick="circleColorChange('w61Circle')"></div>
+      <input type="text" value="World 61 - Duel Arena"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world61timer1')">x</button>
+      <button type="button" onclick="resetWorld61Rock1Timer('world61timer1'); document.getElementById('w61Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w61Image" alt="w61Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world61timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world61timer2')">x</button>
+      <button type="button" onclick="resetWorld61Rock2Timer('world61timer2'); document.getElementById('w61Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world61timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world61timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld61Rock3Timer('world61timer3'); document.getElementById('w61Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world61timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w80Div">
+      <div class="circle" id="w80Circle" onclick="circleColorChange('w80Circle')"></div>
+      <input type="text" value="World 80 - Clan Wars"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world80timer1')">x</button>
+      <button type="button" onclick="resetWorld80Rock1Timer('world80timer1'); document.getElementById('w80Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w80Image" alt="w80Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world80timer1>Unknown<!--mr  tora--></p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world80timer2')">x</button>
+      <button type="button" onclick="resetWorld80Rock2Timer('world80timer2'); document.getElementById('w80Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world80timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world80timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld80Rock3Timer('world80timer3'); document.getElementById('w80Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world80timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w81Div">
+      <div class="circle" id="w81Circle" onclick="circleColorChange('w81Circle')"></div>
+      <input type="text" value="World 81 - Fist of Guthix"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world81timer1')">x</button>
+      <button type="button" onclick="resetWorld81Rock1Timer('world81timer1'); document.getElementById('w81Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w81Image" alt="w81Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world81timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world81timer2')">x</button>
+      <button type="button" onclick="resetWorld81Rock2Timer('world81timer2'); document.getElementById('w81Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world81timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world81timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld81Rock3Timer('world81timer3'); document.getElementById('w81Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world81timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w108Div">
+      <div class="circle" id="w108Circle" onclick="circleColorChange('w108Circle')"></div>
+      <input type="text" value="World 108 - Australia"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world108timer1')">x</button>
+      <button type="button" onclick="resetWorld108Rock1Timer('world108timer1'); document.getElementById('w108Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w108Image" alt="w108Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world108timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world108timer2')">x</button>
+      <button type="button" onclick="resetWorld108Rock2Timer('world108timer2'); document.getElementById('w108Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world108timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world108timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld108Rock3Timer('world108timer3'); document.getElementById('w108Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world108timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w120Div">
+      <div class="circle" id="w120Circle" onclick="circleColorChange('w120Circle')"></div>
+      <input type="text" value="World 120 - Minigames [LEGACY]"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world120timer1')">x</button>
+      <button type="button" onclick="resetWorld120Rock1Timer('world120timer1'); document.getElementById('w120Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w120Image" alt="w120Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world120timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world120timer2')">x</button>
+      <button type="button" onclick="resetWorld120Rock2Timer('world120timer2'); document.getElementById('w120Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world120timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world120timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld120Rock3Timer('world120timer3'); document.getElementById('w120Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world120timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w135Div">
+      <div class="circle" id="w135Circle" onclick="circleColorChange('w135Circle')"></div>
+      <input type="text" value="World 135 - [EOC]"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world135timer1')">x</button>
+      <button type="button" onclick="resetWorld135Rock1Timer('world135timer1'); document.getElementById('w135Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w135Image" alt="w135Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world135timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world135timer2')">x</button>
+      <button type="button" onclick="resetWorld135Rock2Timer('world135timer2'); document.getElementById('w135Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world135timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world135timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld135Rock3Timer('world135timer3'); document.getElementById('w135Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world135timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w136Div">
+      <div class="circle" id="w136Circle" onclick="circleColorChange('w136Circle')"></div>
+      <input type="text" value="World 136 - EU [LEGACY]"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world136timer1')">x</button>
+      <button type="button" onclick="resetWorld136Rock1Timer('world136timer1'); document.getElementById('w136Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w136Image" alt="w136Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world136timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world136timer2')">x</button>
+      <button type="button" onclick="resetWorld136Rock2Timer('world136timer2'); document.getElementById('w136Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world136timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world136timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld136Rock3Timer('world136timer3'); document.getElementById('w136Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world136timer3>Unknown</p>
+    </div>
+    
+    <div class="worlds" id="w141Div">
+      <div class="circle" id="w141Circle" onclick="circleColorChange('w141Circle')"></div>
+      <input type="text" value="World 141 - South America"> 
+      <br>
+      <button type="button" class="resetButton" onclick="xResetTimer('world141timer1')">x</button>
+      <button type="button" onclick="resetWorld141Rock1Timer('world141timer1'); document.getElementById('w141Div').style.border = '2px solid #000'">Rock 1</button>
+      <img src="exS.png" id="w141Image" alt="w141Image" style="width:20px;height:80px;visibility:hidden" onclick="style='visibility:hidden'">
+      <p class="night" id=world141timer1>Unknown</p>
+      <button type="button" class="resetButton" onclick="xResetTimer('world141timer2')">x</button>
+      <button type="button" onclick="resetWorld141Rock2Timer('world141timer2'); document.getElementById('w141Div').style.border = '2px solid #000'">Rock 2</button>
+      <p class="night" id=world141timer2>Unknown</p>
+      <button type="button" class="resetButton disabledOnWilderness" onclick="xResetTimer('world141timer3')">x</button>
+      <button type="button" class="disabledOnWilderness" onclick="resetWorld141Rock3Timer('world141timer3'); document.getElementById('w141Div').style.border = '2px solid #000'">Rock 3</button>
+      <p class="night disabledOnWilderness" id=world141timer3>Unknown</p>
+    </div>
+    
+   </div>
+   
+   <div id="footer">
+     <br>
+     <p class="night" style="float:left">Version 1.1.0 | Updated on the 17th of March, 2018 | Made by <u>mr  tora</u></p>
+   </div> 
+    
+  </body>
+</html>

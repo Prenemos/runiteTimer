@@ -1,0 +1,122 @@
+/* CSS Document */
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  //margin: 0;
+  padding-bottom: 6rem;
+  height: 100%;
+  min-height: 100%;
+  //font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.worlds {
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 5px;
+  width: 240px;
+  display: block;
+  float: left;
+}
+
+#content {
+  width: auto;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index:10;
+  height: 3em;
+  margin-top: -3em;
+  //background-Color: #555;
+}
+
+button {
+  float: left;
+  margin: 0px 15px 0px 5px;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+p {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+img {
+  float: right;
+  margin: 8px 20px 0px 0px;
+}
+
+.resetButton {
+  margin: 0px 0px 0px 5px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px; 
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 31px;
+  left: 15px;
+  bottom: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
