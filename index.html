@@ -2769,7 +2769,7 @@
         }
         for(var i = 0; i < linksArrayList.length; i++){
           linksArrayList[i].style.color = "purple";
-        }
+        }  
       }
     }
     
@@ -2792,7 +2792,20 @@
           thirdRockArrayList[i].style.visibility = "visible";
         }
       }
-    } 
+    }
+    
+    function setCurrentWorld(checkBoxID) {
+      var allCheckBoxes = document.getElementsByClassName("checkBox");
+      var activeCheckBox = document.getElementById(checkBoxID);
+      if(activeCheckBox.checked == true) {
+        for(var i = 0; i < allCheckBoxes.length; i++){
+          allCheckBoxes[i].checked = false;
+          activeCheckBox.checked = true;
+        }
+      }
+      
+    }
+    
     
   </script>
   
@@ -2816,8 +2829,9 @@
   </div> 
   
   <div id="content"> 
-    <div class="worlds" id="w3Div">
-      <div class="circle" id="w3Circle" onclick="circleColorChange('w3Circle')"></div>
+    <div class="worlds" id="w3Div">      
+      <input type="checkbox" class="checkBox" id="checkBox3" name="currentWorld" onclick="setCurrentWorld('checkBox3')">
+      <div class="circle" id="w3Circle" onclick="circleColorChange('w3Circle')"></div>      
       <input type="text" value="World 3 - Trade"> 
       <br>
       <button type="button" class="resetButton" onclick="xResetTimer('world3timer1')">x</button>
@@ -2833,6 +2847,7 @@
     </div>
     
     <div class="worlds" id="w7Div">
+      <input type="checkbox" class="checkBox" id="checkBox7" name="currentWorld" onclick="setCurrentWorld('checkBox7')">
       <div class="circle" id="w7Circle" onclick="circleColorChange('w7Circle')"></div>
       <input type="text" value="World 7 - Dungeoneering"> 
       <br>
@@ -2849,6 +2864,7 @@
     </div>
     
     <div class="worlds" id="w8Div">
+      <input type="checkbox" class="checkBox" id="checkBox8" name="currentWorld" onclick="setCurrentWorld('checkBox8')">
       <div class="circle" id="w8Circle" onclick="circleColorChange('w8Circle')"></div>
       <input type="text" value="World 8 - Clan Recruitment"> 
       <br>
@@ -2865,6 +2881,7 @@
     </div>
     
     <div class="worlds" id="w11Div">
+      <input type="checkbox" class="checkBox" id="checkBox11" name="currentWorld" onclick="setCurrentWorld('checkBox11')">
       <div class="circle" id="w11Circle" onclick="circleColorChange('w11Circle')"></div>
       <input type="text" value="World 11 - UK"> 
       <br>
@@ -2881,6 +2898,7 @@
     </div>
     
     <div class="worlds" id="w17Div">
+      <input type="checkbox" class="checkBox" id="checkBox17" name="currentWorld" onclick="setCurrentWorld('checkBox17')">
       <div class="circle" id="w17Circle" onclick="circleColorChange('w17Circle')"></div>
       <input type="text" value="World 17 - Europe"> 
       <br>
@@ -2897,6 +2915,7 @@
     </div>
     
     <div class="worlds" id="w19Div">
+      <input type="checkbox" class="checkBox" id="checkBox19" name="currentWorld" onclick="setCurrentWorld('checkBox19')">
       <div class="circle" id="w19Circle" onclick="circleColorChange('w19Circle')"></div>
       <input type="text" value="World 19 - Netherlands"> 
       <br>
@@ -2913,6 +2932,7 @@
     </div>
     
     <div class="worlds" id="w20Div">
+      <input type="checkbox" class="checkBox" id="checkBox20" name="currentWorld" onclick="setCurrentWorld('checkBox20')">
       <div class="circle" id="w20Circle" onclick="circleColorChange('w20Circle')"></div>
       <input type="text" value="World 20 - Minigames"> 
       <br>
@@ -2929,6 +2949,7 @@
     </div>
     
     <div class="worlds" id="w29Div">
+      <input type="checkbox" class="checkBox" id="checkBox29" name="currentWorld" onclick="setCurrentWorld('checkBox29')">
       <div class="circle" id="w29Circle" onclick="circleColorChange('w29Circle')"></div>
       <input type="text" value="World 29 - Bonfires"> 
       <br>
@@ -2945,6 +2966,7 @@
     </div>
     
     <div class="worlds" id="w33Div">
+      <input type="checkbox" class="checkBox" id="checkBox33" name="currentWorld" onclick="setCurrentWorld('checkBox33')">
       <div class="circle" id="w33Circle" onclick="circleColorChange('w33Circle')"></div>
       <input type="text" value="World 33 - PK [LEGACY]"> 
       <br>
@@ -2961,6 +2983,7 @@
     </div>
     
     <div class="worlds" id="w34Div">
+      <input type="checkbox" class="checkBox" id="checkBox34" name="currentWorld" onclick="setCurrentWorld('checkBox34')">
       <div class="circle" id="w34Circle" onclick="circleColorChange('w34Circle')"></div>
       <input type="text" value="World 34 - United States"> 
       <br>
@@ -2977,6 +3000,7 @@
     </div>
     
     <div class="worlds" id="w38Div">
+      <input type="checkbox" class="checkBox" id="checkBox38" name="currentWorld" onclick="setCurrentWorld('checkBox38')">
       <div class="circle" id="w38Circle" onclick="circleColorChange('w38Circle')"></div>
       <input type="text" value="World 38 - RuneSpan"> 
       <br>
@@ -2993,6 +3017,7 @@
     </div>
     
     <div class="worlds" id="w41Div">
+      <input type="checkbox" class="checkBox" id="checkBox41" name="currentWorld" onclick="setCurrentWorld('checkBox41')">
       <div class="circle" id="w41Circle" onclick="circleColorChange('w41Circle')"></div>
       <input type="text" value="World 41 - Role-Playing"> 
       <br>
@@ -3009,6 +3034,7 @@
     </div>
     
     <div class="worlds" id="w43Div">
+      <input type="checkbox" class="checkBox" id="checkBox43" name="currentWorld" onclick="setCurrentWorld('checkBox43')">
       <div class="circle" id="w43Circle" onclick="circleColorChange('w43Circle')"></div>
       <input type="text" value="World 43 - Canada"> 
       <br>
@@ -3025,6 +3051,7 @@
     </div>
     
     <div class="worlds" id="w57Div">
+      <input type="checkbox" class="checkBox" id="checkBox57" name="currentWorld" onclick="setCurrentWorld('checkBox57')">
       <div class="circle" id="w57Circle" onclick="circleColorChange('w57Circle')"></div>
       <input type="text" value="World 57 - US [LEGACY]"> 
       <br>
@@ -3041,6 +3068,7 @@
     </div>
     
     <div class="worlds" id="w61Div">
+      <input type="checkbox" class="checkBox" id="checkBox61" name="currentWorld" onclick="setCurrentWorld('checkBox61')">
       <div class="circle" id="w61Circle" onclick="circleColorChange('w61Circle')"></div>
       <input type="text" value="World 61 - Duel Arena"> 
       <br>
@@ -3057,6 +3085,7 @@
     </div>
     
     <div class="worlds" id="w80Div">
+      <input type="checkbox" class="checkBox" id="checkBox80" name="currentWorld" onclick="setCurrentWorld('checkBox80')">
       <div class="circle" id="w80Circle" onclick="circleColorChange('w80Circle')"></div>
       <input type="text" value="World 80 - Clan Wars"> 
       <br>
@@ -3073,6 +3102,7 @@
     </div>
     
     <div class="worlds" id="w81Div">
+      <input type="checkbox" class="checkBox" id="checkBox81" name="currentWorld" onclick="setCurrentWorld('checkBox81')">
       <div class="circle" id="w81Circle" onclick="circleColorChange('w81Circle')"></div>
       <input type="text" value="World 81 - Fist of Guthix"> 
       <br>
@@ -3089,6 +3119,7 @@
     </div>
     
     <div class="worlds" id="w108Div">
+      <input type="checkbox" class="checkBox" id="checkBox108" name="currentWorld" onclick="setCurrentWorld('checkBox108')">
       <div class="circle" id="w108Circle" onclick="circleColorChange('w108Circle')"></div>
       <input type="text" value="World 108 - Australia"> 
       <br>
@@ -3105,6 +3136,7 @@
     </div>
     
     <div class="worlds" id="w120Div">
+      <input type="checkbox" class="checkBox" id="checkBox120" name="currentWorld" onclick="setCurrentWorld('checkBox120')">
       <div class="circle" id="w120Circle" onclick="circleColorChange('w120Circle')"></div>
       <input type="text" value="World 120 - Minigames [LEGACY]"> 
       <br>
@@ -3121,6 +3153,7 @@
     </div>
     
     <div class="worlds" id="w135Div">
+      <input type="checkbox" class="checkBox" id="checkBox135" name="currentWorld" onclick="setCurrentWorld('checkBox135')">
       <div class="circle" id="w135Circle" onclick="circleColorChange('w135Circle')"></div>
       <input type="text" value="World 135 - [EOC]"> 
       <br>
@@ -3137,6 +3170,7 @@
     </div>
     
     <div class="worlds" id="w136Div">
+      <input type="checkbox" class="checkBox" id="checkBox136" name="currentWorld" onclick="setCurrentWorld('checkBox136')">
       <div class="circle" id="w136Circle" onclick="circleColorChange('w136Circle')"></div>
       <input type="text" value="World 136 - EU [LEGACY]"> 
       <br>
@@ -3153,6 +3187,7 @@
     </div>
     
     <div class="worlds" id="w141Div">
+      <input type="checkbox" class="checkBox" id="checkBox141" name="currentWorld" onclick="setCurrentWorld('checkBox141')">
       <div class="circle" id="w141Circle" onclick="circleColorChange('w141Circle')"></div>
       <input type="text" value="World 141 - South America"> 
       <br>
@@ -3172,7 +3207,7 @@
    
    <div id="footer">
      <br>
-     <p class="night" style="float:left">Version 1.1.0 | Updated on the 19th of May, 2018 | <a target="_blank" href="https://www.reddit.com/r/freeplayers/comments/8j008g/question_runite_ore_respawn_timer_tool/">Leave feedback</a> | Made by <u>mr  tora</u></p>
+     <p class="night" style="float:left">Version 1.1.0 | Updated on the 23rd of May, 2018 | <a target="_blank" href="https://www.reddit.com/r/freeplayers/comments/8j008g/question_runite_ore_respawn_timer_tool/">Leave feedback</a> | Made by <u>mr  tora</u></p>
    </div> 
     
   </body>
