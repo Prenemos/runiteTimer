@@ -71,7 +71,7 @@ img {
   background: white;
   border: 1px solid #000;
   margin-bottom: 5px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .switch {
@@ -128,3 +128,9 @@ a {
 a:visited {
   color: purple;  
 }
+
+.checkBox {
+  margin-left: 115px;
+  float: left;
+}
+
