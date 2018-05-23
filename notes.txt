@@ -1,7 +1,10 @@
 made by mr  tora
 
+How to use:
+Click on a rock (Rock 1, Rock 2, or Rock3) to start a timer. Clicking on the "x" next to every rock will reset that timer. Clicking on the same rock-button again will restart the timer. When the timer is below 1 minute, border will turn red. When timer hits 0, red exclamation mark will appear. 
+
+
 TODO:
--adjust wilderness timers
 -
 
 github:
